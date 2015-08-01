@@ -137,6 +137,7 @@ from .compat import USING_PYTHON2, expanduser
 logger = logging.getLogger(__name__)
 logger.addHandler(logging.NullHandler())
 
+
 def configure_urllib3():
     from requests.packages import urllib3
     from requests.packages.urllib3.packages.ssl_match_hostname import match_hostname
