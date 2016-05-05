@@ -19,8 +19,10 @@
 
 from __future__ import print_function, unicode_literals, division, absolute_import
 
-import os, sys, unittest, json, tempfile, subprocess, csv, shutil, re, base64, random, time, filecmp, stat
+import os, sys, unittest, json, tempfile, subprocess, csv, shutil, re, base64, random, time
+import filecmp
 import pipes
+import stat
 import hashlib
 import collections
 from contextlib import contextmanager

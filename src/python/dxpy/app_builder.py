@@ -36,9 +36,13 @@ the effective destination project.
 
 from __future__ import print_function, unicode_literals, division, absolute_import
 
-import os, sys, json, subprocess, tempfile, multiprocessing, gzip, io, tarfile, stat
+import os, sys, json, subprocess, tempfile, multiprocessing
 import datetime
+import gzip
 import hashlib
+import io
+import stat
+import tarfile
 
 import dxpy
 from . import logger
