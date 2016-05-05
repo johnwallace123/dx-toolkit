@@ -242,11 +242,9 @@ def upload_resources(src_dir, project=None, folder='/', ensure_upload=False, for
         # mode, and the mtime in milliseconds since the epoch.
         #
         # Note when looking at a link, unless --force-symlinks is specified,
-        # and the link is to be dereferenced the mtime is taken to be the
-        # maximum of the mtime of the link itself and of the link's target.
-        # Additionally, the mode is the mode of the link's target.
-        # If --force-symlinks is specified, or if the link is not to be
-        # dereferenced, we'll only look at the link itself.
+        # the link will be dereferenced, and the mtime and mode are those of
+        # the link's target. If --force-symlinks is specified, or if the link
+        # is not to be dereferenced, we'll only look at the link itself.
 
         # get the absolute resource directory, and go there
         # this is the equivalent of "-C" in tar
